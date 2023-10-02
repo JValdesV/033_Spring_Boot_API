@@ -1,11 +1,16 @@
 package com.empresa.api.apiempresa.medico;
 
 import com.empresa.api.apiempresa.direccion.Direccion;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
 
 @Table(name="medicos")
 @Entity(name="Medico")
