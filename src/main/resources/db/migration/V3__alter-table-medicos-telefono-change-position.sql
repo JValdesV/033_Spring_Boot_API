@@ -1,0 +1,1 @@
+alter table medicos modify telefono varchar(20) after email;
